@@ -9,7 +9,7 @@
      }
      else
      {
-         printf("该年为平年");
+         printf("该年为非闰年");
      }
      return 0;
  }
