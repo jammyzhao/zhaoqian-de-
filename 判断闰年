@@ -1,0 +1,15 @@
+#include <stdio.h>
+  
+ int main()
+ {
+     int year;
+     if(year%400==0||(year%4==0 && year%100!=0))
+     {
+         printf("该年为闰年");
+     }
+     else
+     {
+         printf("该年为平年");
+     }
+     return 0;
+ }
