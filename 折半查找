@@ -1,3 +1,4 @@
+写代码可以在整型有序数组中查找想要的数字,找到了返回下标,找不到返回-1
 #include<stdio.h>
 int search(int arr[], int m, int left, int light)
 {
