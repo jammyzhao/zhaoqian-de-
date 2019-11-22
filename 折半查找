@@ -1,0 +1,22 @@
+#include<stdio.h>
+int search(int arr[], int m, int left, int light)
+{
+	while (left <= light)
+	{
+		int mid = left + (light - left) / 2;
+
+		if (arr[mid] > m)
+		{
+			light = mid - 1;
+		}
+		if (arr[mid] < m)
+		{
+			left = mid + 1;
+		}
+		if (arr[mid] == m)
+		{
+			return mid;
+		}	
+	}
+	return -1;
+}
